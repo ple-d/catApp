@@ -56,6 +56,10 @@ class ViewController: UIViewController {
         catCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         catCollectionView.bottomAnchor.constraint(equalTo: rightButton.topAnchor).isActive = true
         
+        setUpButtons()
+    }
+    
+    func setUpButtons() {
         leftButton.backgroundColor = .systemRed
         rightButton.backgroundColor = .systemBlue
         leftButton.setTitle("PREVIOUS", for: .normal)
